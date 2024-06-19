@@ -3,7 +3,7 @@
 #include <include/libopencm3/stm32/f4/gpio.h>
 
 static void rcc_setup(void) {
-    rcc_clock_setup_pll();
+    rcc_clock_setup_pll(rcc_hsi_configs[]);
 }
 
 int main(void) {
