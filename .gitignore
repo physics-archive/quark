@@ -1,11 +1,9 @@
-*.bin
 *.elf
 *.o
 *.map
 *~
 *.o
 *.d
-*.bin
 *.elf
 *.hex
 *.srec
@@ -15,3 +13,4 @@
 generated.*.ld
 .gdb_history
 .DS_Store
+*.bin
