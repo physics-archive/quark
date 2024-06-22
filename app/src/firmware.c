@@ -24,6 +24,7 @@ static void maintain_frequency_standard(uint32_t cycles) {
         __asm__("nop");
     }
 }
+
 int main(void) {
     rcc_setup();
     gpio_setup();
@@ -31,7 +32,7 @@ int main(void) {
     while (1) {
         // Turn the LED on and then off at freq (f)
         gpio_toggle(LED_PORT,LED_PIN);
-        maintain_frequency_standard(84000000 / 4);
+        maintain_frequency_standard(84000000 / 80);
     }
 
     return 0;
